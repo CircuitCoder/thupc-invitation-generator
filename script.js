@@ -11,7 +11,9 @@ function print() {
     ctx.drawImage(bg, 0, 0);
 
     ctx.textAlign = 'center';
-    ctx.font = '30px sans-serif';
+    if(name.length === 4)
+      ctx.font = '26px sans-serif';
+    else ctx.font = '30px sans-serif';
     ctx.fillStyle = 'black';
     ctx.fillText(name, 1156, 230, 300)
 
